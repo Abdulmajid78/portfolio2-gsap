@@ -1,0 +1,73 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+    .animate-fade-in {
+        animation: fadeIn 1s ease-out;
+    }
+
+    .animate-fade-in-delay {
+        animation: fadeIn 1s ease-out 0.3s backwards;
+    }
+
+    .animate-fade-in-delay-2 {
+        animation: fadeIn 1s ease-out 0.6s backwards;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+:root {
+    --primary: #6366f1;
+    --primary-foreground: #ffffff;
+}
+
+.dark {
+    --primary: #818cf8;
+    --primary-foreground: #ffffff;
+}
+
+::selection {
+    background-color: var(--primary);
+    color: var(--primary-foreground);
+}
+
+body {
+    background: linear-gradient(to bottom, #000000, #1a202c);
+}
+
+/* Ensure the scroll progress indicator uses the primary color */
+.bg-primary {
+    background-color: var(--primary);
+}
+
+::-webkit-scrollbar {
+    width: 0;
+}
+
+.animated-panel {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.animated-panel.animated-one {
+    background-image: linear-gradient(0deg, rgba(133, 133, 133, 0.1), rgba(128, 126, 126, 0.1)), url("../public/projects/Learning management system.jpg");
+}
+
+.animated-panel.animated-two {
+    background-image: linear-gradient(0deg, rgba(133, 133, 133, 0.1), rgba(128, 126, 126, 0.1)), url("../public/projects/Textile Course.png");
+}
+.animated-panel.animated-three {
+    background-image: linear-gradient(0deg, rgba(133, 133, 133, 0.1), rgba(128, 126, 126, 0.1)), url("../public/projects/Alfa Karton.png");
+}
