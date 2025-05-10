@@ -9,19 +9,20 @@ interface EducationItem {
 
 const educationData: EducationItem[] = [
     {
-        degree: "Bachelor of Science in Computer Science",
-        institution: "University of Technology",
-        year: "2018 - 2022",
+        degree: "Full Stack Web Development Bootcamp",
+        institution: "Bobir Akilkhanov Tech Academy",
+        year: "2022-2023",
         description:
-            "Focused on software engineering, web development, and data structures. Participated in various hackathons and coding competitions.",
+            "Intensive 9-month program covering modern web technologies including Python, Django, HTML, CSS, Bootstrap, DRF and database management.",
     },
     {
-        degree: "Full Stack Web Development Bootcamp",
-        institution: "Tech Academy",
-        year: "2022",
+        degree: "Isystem Learning center",
+        institution: "Front-end Development",
+        year: "2024",
         description:
-            "Intensive 12-week program covering modern web technologies including React, Node.js, and database management.",
+            "Focused on Frontend developing, JS, Sass and React. Participated in various hackathons and coding competitions.",
     },
+
     // Add more education items as needed
 ]
 

@@ -12,7 +12,6 @@ import {Projects} from "@/components/projects"
 import {gsap} from "gsap"
 import {ScrollTrigger} from "gsap/ScrollTrigger"
 import HorizontalScroll from "@/components/HorizontalScroll";
-
 gsap.registerPlugin(ScrollTrigger)
 
 export default function Home() {

@@ -71,3 +71,6 @@ body {
 .animated-panel.animated-three {
     background-image: linear-gradient(0deg, rgba(133, 133, 133, 0.1), rgba(128, 126, 126, 0.1)), url("../public/projects/Alfa Karton.png");
 }
+.animated-panel.animated-four {
+    background-image: linear-gradient(0deg, rgba(133, 133, 133, 0.1), rgba(128, 126, 126, 0.1)), url("../public/projects/Tort Fasl Fayz.png");
+}

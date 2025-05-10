@@ -6,14 +6,14 @@ export function DynamicBackground() {
     const canvasRef = useRef<HTMLCanvasElement>(null)
 
     useEffect(() => {
-        const canvas = canvasRef.current
-        if (!canvas) return
+        const canvas = canvasRef.current;
+        if (!canvas) return;
 
-        const ctx = canvas.getContext("2d")
-        if (!ctx) return
+        const ctx = canvas.getContext("2d");
+        if (!ctx) return;
 
-        canvas.width = window.innerWidth
-        canvas.height = window.innerHeight
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
 
         const particles: Particle[] = []
         const particleCount = 100
@@ -28,8 +28,8 @@ export function DynamicBackground() {
             speedY: number
 
             constructor() {
-                this.x = Math.random() * canvas.width
-                this.y = Math.random() * canvas.height
+                this.x = Math.random() * canvas.width;
+                this.y = Math.random() * canvas.height;
                 this.radius = Math.random() * 2 + 1
                 this.color = colors[Math.floor(Math.random() * colors.length)]
                 this.speedX = Math.random() * 3 - 1.5

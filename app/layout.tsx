@@ -1,7 +1,6 @@
 import type {Metadata} from "next"
 import {Inter} from "next/font/google"
 import "./globals.css"
-import {Navigation} from "@/components/navigation"
 import {Footer} from "@/components/footer"
 import {DynamicBackground} from "@/components/dynamic-background"
 import {ScrollProgress} from "@/components/scroll-progress"
@@ -14,17 +13,17 @@ export const metadata: Metadata = {
     description:
         'Professional portfolio showcasing creative work, projects, and expertise in web development, design, and digital solutions. View my latest work and get in touch for collaborations.',
     keywords: [
-    "front-end developer Uzbekistan",
-    "frontend developer Tashkent",
-    "web developer Uzbekistan",
-    "React developer Uzbekistan",
-    "freelance front-end developer",
-    "JavaScript developer Uzbekistan",
-    "HTML CSS developer",
-    "responsive web design Uzbekistan",
-    "UI UX developer Uzbekistan",
-    "mobile-first design expert"
-],
+        "front-end developer Uzbekistan",
+        "frontend developer Tashkent",
+        "web developer Uzbekistan",
+        "React developer Uzbekistan",
+        "freelance front-end developer",
+        "JavaScript developer Uzbekistan",
+        "HTML CSS developer",
+        "responsive web design Uzbekistan",
+        "UI UX developer Uzbekistan",
+        "mobile-first design expert"
+    ],
     authors: [{name: 'Abdumajid Masikhullaev'}],
     metadataBase: new URL('https://abduma.uz'),
     openGraph: {
@@ -104,3 +103,4 @@ export default function RootLayout({
 
 
 import './globals.css'
+import {Navigation} from "@/components/navigation";
