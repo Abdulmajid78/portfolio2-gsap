@@ -9,8 +9,9 @@ export function Footer() {
           <div className="mb-4 md:mb-0">
             <p className="text-sm">&copy; {new Date().getFullYear()} Abdumajid. All rights reserved.</p>
           </div>
-          <div className="flex space-x-4">
-            <Link
+          <div className="flex flex-col space-y-1">
+            <div className='flex space-x-4'>
+              <Link
               href="https://github.com"
               target="_blank"
               rel="noopener noreferrer"
@@ -29,6 +30,9 @@ export function Footer() {
             <Link href="mailto:hello@example.com" className="hover:text-white transition-colors">
               <Mail className="w-5 h-5" />
             </Link>
+            </div>
+
+            <div className="flex justify-end"><a className="text-sm font-medium text-blue-600 underline" href="https://old.abduma.uz/">Old design</a></div>
           </div>
         </div>
       </div>
