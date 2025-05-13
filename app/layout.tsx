@@ -62,13 +62,31 @@ export default function RootLayout({children,}: { children: React.ReactNode }) {
         <html lang="en" className="scroll-smooth">
         <head>
             {/* Cookiebot */}
-            <script
-                id="Cookiebot"
-                src="https://consent.cookiebot.com/uc.js"
-                data-cbid="4733fff5-a948-4c9b-903e-a5373dc2034b"
-                type="text/javascript"
-                async
-            ></script>
+            {/*<script*/}
+            {/*    id="Cookiebot"*/}
+            {/*    src="https://consent.cookiebot.com/uc.js"*/}
+            {/*    data-cbid="4733fff5-a948-4c9b-903e-a5373dc2034b"*/}
+            {/*    type="text/javascript"*/}
+            {/*    async*/}
+            {/*></script>*/}
+
+            {/*google tag manager*/}
+            <script>(function(w,d,s,l,i){w[l] = w[l] || [];w[l].push({'gtm.start':
+                new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+                j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+                'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+            })(window,document,'script','dataLayer','GTM-WQKC9ZJ5');
+            </script>
+
+            <!-- Google Tag Manager (noscript) -->
+            <noscript>
+                <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WQKC9ZJ5"
+                        height="0" width="0" style="display:none;visibility:hidden"></iframe>
+            </noscript>
+            <!-- End Google Tag Manager (noscript) -->
+
+            {/*end google tag manager*/}
+
 
             {/* Google Analytics 4 */}
             <script
